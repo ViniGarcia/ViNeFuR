@@ -5,4 +5,9 @@ def platformStatus():
 
 	return 'ONLINE'
 
-run(host='192.168.0.10', port=80, debug=True)
+@route('/page/', method='GET')
+def platformPage():
+	
+	return 'PAGE'
+
+run(host='192.168.0.11', port=80, debug=True)
