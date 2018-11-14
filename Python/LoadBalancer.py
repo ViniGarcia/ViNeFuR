@@ -34,11 +34,13 @@ def inOutServer():
             et = Ether(bytes(pkt[0]))
             if not et.src in firstIfaceFlows:
                 continue 
-            print('eth0 -> ' + str(et.src))
         except:
             continue
-
-        outSocket01.send(bytes(et))        
+        
+        if int(bytes(et.src[-1].encode('utf-8'))[0]) % 2 == 0:
+            outSocket01.send(bytes(et))
+        else:
+            outSocket02.send(bytes(et))        
 
 def outInServer(iface, ifaceFlows):
 
