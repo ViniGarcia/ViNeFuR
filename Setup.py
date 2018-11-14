@@ -23,7 +23,7 @@ def environmentConfigure():
 	call(['apt-get', 'install', 'curl'])
 	call(['apt-get', 'install', 'iperf'])
         call(['apt-get', 'install', 'httperf'])
-	call(['apt-get', 'install', 'd-itg'])
+        call(['apt-get', 'install', 'd-itg'])
 
 
 def baseConfigure(bridgesQuantity):
@@ -103,7 +103,7 @@ if len(sys.argv) > 1:
 
 	if sys.argv[1] == '-dr':
 		
-		if len(sys.argv) == 1:
+		if len(sys.argv) == 2:
 			downloadRepository()
 		else:
 			help()
