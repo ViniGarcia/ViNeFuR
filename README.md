@@ -1,1 +1,1 @@
-# ViNeFuR
+# Virtualized Network Function Repository (ViNeFuR)

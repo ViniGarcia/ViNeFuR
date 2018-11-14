@@ -3,7 +3,7 @@ import threading
 from scapy.all import *
 
 firstIface = 'eth0'
-firstIfaceFlows = ['52:54:00:42:84:65']
+firstIfaceFlows = ['52:54:00:42:84:65', '52:54:00:4a:f7:66']
 secondIface = 'eth1'
 secondIfaceFlows = ['52:54:00:a1:54:c0']
 thirdIface = 'eth2'
