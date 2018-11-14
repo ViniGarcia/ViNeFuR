@@ -22,8 +22,8 @@ def environmentConfigure():
 
 	call(['apt-get', 'install', 'curl'])
 	call(['apt-get', 'install', 'iperf'])
-        call(['apt-get', 'install', 'httperf'])
-        call(['apt-get', 'install', 'd-itg'])
+	call(['apt-get', 'install', 'httperf'])
+	call(['apt-get', 'install', 'd-itg'])
 
 
 def baseConfigure(bridgesQuantity):
