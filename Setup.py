@@ -13,7 +13,10 @@ def environmentConfigure():
 	call(['apt-get', 'install', 'python3-pip'])
 	call(['pip3', 'install', 'scapy'])
 	call(['pip3', 'install', 'bottle'])
-	call(['apt-get', 'install', 'git'])
+	call(['apt-get', 'install', 'nodejs-legacy'])
+	call(['apt-get', 'install', 'npm'])
+	call(['apt-get', 'install', 'git'])        
+
 	call(['git', 'clone', 'https://github.com/kohler/click.git'])
 	call(['./click/configure', '--disable-linuxmodule', '--enable-ip6'])
 	call(['click/userlevel/make'])
@@ -24,6 +27,7 @@ def environmentConfigure():
 	call(['apt-get', 'install', 'iperf'])
 	call(['apt-get', 'install', 'httperf'])
 	call(['apt-get', 'install', 'd-itg'])
+	call(['npm', 'install', '-g', 'http-perf'])
 
 
 def baseConfigure(bridgesQuantity):
