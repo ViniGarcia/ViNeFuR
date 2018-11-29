@@ -37,7 +37,7 @@ def inOutServer():
         except:
             continue
         
-        if int(bytes(et.src[-1].encode('utf-8'))[0]) % 2 == 0:
+        if int(bytes(et.src[-1].encode('utf-8'))[0]) % 2 == 1:
             outSocket01.send(bytes(et))
         else:
             outSocket02.send(bytes(et))        

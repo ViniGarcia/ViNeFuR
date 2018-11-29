@@ -3,7 +3,7 @@ import threading
 import codecs
 from scapy.all import *
 
-contentTable = ['porn', 'guns', 'torrent', 'skype', '/status/']
+contentTable = ['porn', 'guns', 'torrent', 'skype']
 
 firstIface = 'eth0'
 firstIfaceFlows = ['52:54:00:42:84:65']

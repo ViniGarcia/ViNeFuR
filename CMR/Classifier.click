@@ -22,8 +22,8 @@ cw :: Classifier(
 
 //HTTP/S PACKETS ONLY
 f :: IPClassifier(
-	src tcp port 80, 
-	src tcp port 443,
+	dst tcp port 80, 
+	dst tcp port 443,
 	-  
 );
 

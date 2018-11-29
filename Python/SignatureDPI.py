@@ -51,7 +51,7 @@ def inOutServer():
                         else:
                             if bytes(et[IP][TCP])[signature[1][0]-1] != signature[1][1][0]:
                                 continue
-
+                    
                     del et[IP].ihl
                     del et[IP].len
                     del et[IP].chksum
